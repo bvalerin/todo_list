@@ -4,7 +4,7 @@ import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="login">
@@ -23,9 +23,7 @@ const Login = () => {
           </div>
         </form>
         <button className="iniciarSesion">
-          <Link to={"/home"}>
-            Iniciar Sesion
-          </Link>
+          <Link to={"/home"}>Iniciar Sesion</Link>
         </button>
         <button className="iniciarSesionGoogle">
           <img src={google} alt="Google" />
@@ -36,7 +34,7 @@ const Login = () => {
           ¿Eres nuevo? <Link to={"/"}>¡Registrate!</Link>
         </p>
         <Link to={"/"} className="olvidasteTuContraseña">
-          ¿Olvidaste tu constraseña?
+          ¿Olvidaste tu constraseña? Para mas Informacion
         </Link>
       </div>
     </div>

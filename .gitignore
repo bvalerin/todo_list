@@ -10,6 +10,8 @@
 
 # production
 /build
+#para poner todos los archivos que tengan la extension  .log
+debug.log
 
 # misc
 .DS_Store
