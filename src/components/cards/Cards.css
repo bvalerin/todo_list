@@ -1,0 +1,14 @@
+header {
+  background-color: #29323b;
+  color: white;
+  font-weight: 500;
+}
+
+.Tasks{
+    background-color: #10161D;
+}
+
+.Tasks > .task {
+  background-color: #29323b;
+  color: white;
+}

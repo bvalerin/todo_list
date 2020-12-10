@@ -4,8 +4,7 @@ import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom'
 const Login = () => {
   return (
     <div className="login">
@@ -23,7 +22,11 @@ const Login = () => {
             <input type="password" name="password" placeholder="Password" />
           </div>
         </form>
-        <button className="iniciarSesion">Iniciar Sesion</button>
+        <button className="iniciarSesion">
+          <Link to={"/home"}>
+            Iniciar Sesion
+          </Link>
+        </button>
         <button className="iniciarSesionGoogle">
           <img src={google} alt="Google" />
           Iniciar Sesion con Google
