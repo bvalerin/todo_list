@@ -1,10 +1,10 @@
 import "./App.css";
-import Rounting from "./routing/routing";
+import Routing from "./routing/routing";
 
 function App() {
   return (
     <div className="container_app">
-      <Rounting />
+      <Routing />
     </div>
   );
 }
