@@ -4,10 +4,10 @@ import "./Cards.css";
 const Cards = () => {
     let tasks = ["Solucionar Error", "Crear Componente Sidebar"];
     return (
-        <div>
+        <div className="bodyTask">
             <div className="TaskContainer">
                 <header>
-                    <h2>React & More</h2>
+                    <h4>React & More</h4>
                     <span>
                         plus
                     </span>
