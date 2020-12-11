@@ -12,17 +12,31 @@
   border-radius: 15px;
   background: #1b2631;
 }
+.containerLogin {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* height: 480px; */
+  width: 350px;
+  padding: 10px;
+  padding-top: 80px;
+  top: 80px;
+  border-radius: 15px;
+  background: #1b2631;
+}
+
 
 .login .logo {
   width: 130px;
   height: 130px;
   padding: 10px;
   display: flex;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   align-content: center;
   position: absolute;
   border-radius: 50%;
-  top: -60px;
+  top: -130px;
   background-color: #fdfdfd;
 }
 

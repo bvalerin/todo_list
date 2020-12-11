@@ -1,8 +1,8 @@
 import React from "react";
-import { useForm } from "../../hooks/useForm";
-import email from "../../images/email.svg";
-import pass from "../../images/pass.svg";
-import user from "../../images/user.svg";
+import { useForm } from "../../../hooks/useForm";
+import email from "../../../images/email.svg";
+import pass from "../../../images/pass.svg";
+import user from "../../../images/user.svg";
 import "./signUp.css";
 
 const SignUp = () => {
@@ -20,7 +20,7 @@ const SignUp = () => {
   return (
     <div className="signUp">
       <div className="container">
-        <p>Ingrese su Datos</p>
+        {/* <p>Ingrese su Datos</p> */}
         <form onSubmit={saveRegister}>
           <div className="inputLogin">
             <img src={user} alt="user" />

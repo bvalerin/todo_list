@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
 }
-  .container p{
+  /* .container p{
     margin-top: 40px;
   }
-  
+   */
   .container {
     position: absolute;
     display: flex;
@@ -14,13 +14,13 @@
     height: 480px;
     width: 350px;
     padding: 10px;
-    padding-top: 120px;
+    padding-top: 100px;
     top: 80px;
     border-radius: 15px;
     background: #1b2631;
   }
   
-  .container .logo {
+  /* .container .logo {
     width: 130px;
     height: 130px;
     padding: 10px;
@@ -31,7 +31,7 @@
     top: -60px;
     background-color: #fdfdfd;
   }
-  
+   */
   .container .logo img {
     width: 100%;
   }
@@ -63,97 +63,6 @@
     outline: none;
   }
   
-  .container .iniciarSesion {
-    width: 80%;
-    background-color: crimson;
-    color: #fff;
-    position: absolute;
-    padding: 10px;
-    border: none;
-    border-radius: 50px;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 18px;
-    transition: ease 0.5s;
-  }
-  
-  .container .iniciarSesion:hover {
-    width: 80%;
-    background-color: rgb(122, 8, 31);
-    color: #fff;
-    position: absolute;
-    padding: 10px;
-    border: none;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 18px;
-    transition: ease 0.5s;
-  }
-  
-  .container .iniciarSesionGoogle {
-    width: 80%;
-    background-color: #fdfdfd;
-    color: #000;
-    position: absolute;
-    margin-top: 210px;
-    padding: 12px;
-    border: none;
-    border-radius: 50px;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 18px;
-    transition: ease 0.4s;
-  }
-  
-  .container .iniciarSesionGoogle:hover {
-    width: 80%;
-    background-color: rgba(253, 253, 253, 0.6);
-    color: #000;
-    position: absolute;
-    margin-top: 210px;
-    padding: 12px;
-    border: none;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 18px;
-    transition: ease 0.4s;
-  }
-  
-  .container .iniciarSesionGoogle img {
-    width: 25px;
-    margin-right: 4px;
-    margin-bottom: 2px;
-  }
-  
-  .container .linea {
-    position: absolute;
-    margin-top: 280px;
-    width: 300px;
-    border: 1px solid #fff;
-  }
-  
-  .container p {
-    position: absolute;
-   margin-top: -80px;
-   font-size: 30px;
-    color: #fff;
-  }
-  
-  .container p a {
-    text-decoration: none;
-  }
-  
-  .container .olvidasteTuContraseña {
-    position: absolute;
-    margin-top: 340px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .container .olvidasteTuContraseña:hover {
-    position: absolute;
-    margin-top: 340px;
-    color: rgb(211, 211, 211);
-    text-decoration: none;
-  }
+
+ 
   

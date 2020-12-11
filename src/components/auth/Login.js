@@ -29,7 +29,7 @@ const Login = () => {
   });
   return (
     <div className="login">
-      <div className="container">
+      <div className="containerLogin">
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
@@ -52,16 +52,16 @@ const Login = () => {
             </button>
           </div>
           <hr className="divider" />
+          <div className="login-text">
+            <p>
+              ¿Eres nuevo?{" "}
+              <Link to={"/"}>
+                <span>¡Registrate!</span>
+              </Link>
+            </p>
+            <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
+          </div>
         </form>
-        <div className="login-text">
-          <p>
-            ¿Eres nuevo?{" "}
-            <Link to={"/"}>
-              <span>¡Registrate!</span>
-            </Link>
-          </p>
-          <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
-        </div>
       </div>
     </div>
   );
