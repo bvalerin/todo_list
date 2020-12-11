@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
 import { Link } from "react-router-dom";
+
+import axios from "axios";
+
 const Login = () => {
+  useEffect(() => {
+    axios({
+      url: "https://react-todo-app.hasura.app/v1/graphql",
+      method: "post",
+      data: {
+        query: `
+             query all_user {
+              user {
+                id
+                name
+                email
+              }
+            }`,
+      },
+    }).then((result) => {
+      console.log(result.data);
+    });
+  });
   return (
     <div className="login">
       <div className="container">
@@ -21,21 +42,26 @@ const Login = () => {
             <img src={pass} alt="Password" />
             <input type="password" name="password" placeholder="Password" />
           </div>
+          <div className="actionButtons">
+            <button className="iniciarSesion">
+              <Link to={"/home"}>Iniciar Sesion</Link>
+            </button>
+            <button className="iniciarSesionGoogle">
+              <img src={google} alt="Google" />
+              Iniciar Sesion con Google
+            </button>
+          </div>
+          <hr className="divider" />
         </form>
-        <button className="iniciarSesion">
-          <Link to={"/home"}>Iniciar Sesion</Link>
-        </button>
-        <button className="iniciarSesionGoogle">
-          <img src={google} alt="Google" />
-          Iniciar Sesion con Google
-        </button>
-        <hr className="linea" />
-        <p>
-          ¿Eres nuevo? <Link to={"/"}>¡Registrate!</Link>
-        </p>
-        <Link to={"/"} className="olvidasteTuContraseña">
-          ¿Olvidaste tu constraseña? Para mas Informacion
-        </Link>
+        <div className="login-text">
+          <p>
+            ¿Eres nuevo?{" "}
+            <Link to={"/"}>
+              <span>¡Registrate!</span>
+            </Link>
+          </p>
+          <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
+        </div>
       </div>
     </div>
   );
