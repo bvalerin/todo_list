@@ -7,6 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  display: flex;
+  /* margin-left: 80px; */
+  align-content: center;
+  position: absolute;
+  border-radius: 50%;
+  top: -130px;
+  background-color: #fdfdfd;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

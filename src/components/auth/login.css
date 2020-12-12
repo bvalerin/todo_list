@@ -12,6 +12,7 @@
   border-radius: 15px;
   background: #1b2631;
 }
+
 .containerLogin {
   position: absolute;
   display: flex;
@@ -26,23 +27,20 @@
   background: #1b2631;
 }
 
-
-.login .logo {
+/* .login .logo {
   width: 130px;
   height: 130px;
   padding: 10px;
   display: flex;
-  /* margin-left: 80px; */
+  margin-left: 80px;
   align-content: center;
   position: absolute;
   border-radius: 50%;
   top: -130px;
   background-color: #fdfdfd;
-}
+} */
 
-.login .logo img {
-  width: 100%;
-}
+
 
 .login .inputLogin {
   display: flex;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./login.css";
 import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
-import logo from "../../images/Logo.svg";
+import logo from "../../images/logo.svg";
 import google from "../../images/google.svg";
 import { Link } from "react-router-dom";
 
@@ -30,9 +30,11 @@ const Login = () => {
   return (
     <div className="login">
       <div className="containerLogin">
+
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img  src={logo} alt="logo" />
         </div>
+
         <form action="">
           <div className="inputLogin">
             <img src={email} alt="Email" />

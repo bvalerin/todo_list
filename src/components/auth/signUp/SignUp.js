@@ -3,6 +3,7 @@ import { useForm } from "../../../hooks/useForm";
 import email from "../../../images/email.svg";
 import pass from "../../../images/pass.svg";
 import user from "../../../images/user.svg";
+import logo from "../../../images/logo.svg";
 import "./signUp.css";
 
 const SignUp = () => {
@@ -19,8 +20,17 @@ const SignUp = () => {
   };
   return (
     <div className="signUp">
-      <div className="container">
-        {/* <p>Ingrese su Datos</p> */}
+
+      <div className="registerContainer">
+
+      <div className="logo">
+          <img src={logo} alt="logo" />
+      </div>
+
+        <div className="signUpLabel text-center">
+          Ingrese su Datos
+        </div>
+
         <form onSubmit={saveRegister}>
           <div className="inputLogin">
             <img src={user} alt="user" />
