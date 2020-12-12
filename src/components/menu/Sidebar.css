@@ -1,0 +1,17 @@
+.sidebar {
+  width: 100%;
+  color: #ffffff;
+}
+
+.sidebar_header img {
+  border-radius: 50%;
+  height: 50px;
+}
+.sidebar_body button {
+  background-color: #29323b;
+  color: #ffffff;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 15px;
+  border: none;
+}
