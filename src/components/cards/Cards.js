@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Cards.css";
 
 const Cards = () => {
@@ -23,6 +23,20 @@ const Cards = () => {
                 </div>
             </div>
             <div className="TaskDescription">
+                    <header>
+                        <b>Detalles</b>
+                        <b>Opciones</b>
+                    </header>
+                    <div className="Description">
+                        <h5>Solucionar error en codigo</h5>
+                        <div>
+                            <label>
+                                Description
+                            </label>
+                            <br/>
+                            <input type="text" />
+                        </div>
+                    </div>
             </div>
         </div>
     )

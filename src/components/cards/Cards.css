@@ -19,10 +19,9 @@
   background-color: #29323b;
   color: white;
   border-radius: 10px;
-
 }
 
-header > h4{
+header > h4 {
   font-weight: 600;
 }
 
@@ -34,7 +33,6 @@ header > h4{
   padding-bottom: 2em;
   padding-top: 1em;
 }
-
 
 .TaskContainer > .Tasks > .task {
   background-color: #29323b;
@@ -50,5 +48,27 @@ header > h4{
 }
 
 .TaskDescription {
-  width: 50%;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  background-color: #10161d;
+  color: white;
+}
+
+.TaskDescription > header {
+  display: flex;
+  align-items: center;
+  padding: 10px 1em;
+  justify-content: space-around;
+  background-color: #29323b;
+  color: white;
+  text-decoration: underline;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.TaskDescription > .Description {
+  padding: 1em 0 0 2em;
 }
