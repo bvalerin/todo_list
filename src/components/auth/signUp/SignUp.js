@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "../../../hooks/useForm";
 import email from "../../../images/email.svg";
 import pass from "../../../images/pass.svg";
@@ -71,7 +72,27 @@ const SignUp = () => {
           <button className="iniciarSesion" type="submit">
             Registrar
           </button>
+          
         </form>
+
+        <hr className="divider" />
+          <div className="login-text">
+            <p>
+              ¿Ya tienes cuenta?{" "}
+              <Link to={"/login"}>
+                <span>¡Iniciar Sesion!</span>
+              </Link>
+            </p>
+
+            <p>
+              ¿Home?{" "}
+              <Link to={"/home"}>
+                <span>¡Ir al Home(Provisional)!</span>
+              </Link>
+            </p>
+
+          </div>
+
       </div>
     </div>
   );

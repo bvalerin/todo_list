@@ -1,2 +1,9 @@
 # todo_list
-Collaborative React ToDo List
+Todo List colaborativo en React
+
+
+##
+Importante
+
+
+
