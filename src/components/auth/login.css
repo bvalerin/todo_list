@@ -4,7 +4,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 500px;
+  height: auto;
   width: 350px;
   padding: 10px;
   padding-top: 120px;

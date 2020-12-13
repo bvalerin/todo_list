@@ -4,7 +4,7 @@ import Login from "../components/auth/Login";
 import SignUp from "../components/auth/signUp/SignUp";
 import Home from "../components/home/Home";
 
-const Rounting = () => {
+const Routing = () => {
     return (
         <Router>
             <Switch>
