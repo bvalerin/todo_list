@@ -1,10 +1,10 @@
 import "./App.css";
-import Login from "./components/auth/Login";
+import Rounting from "./routing/routing";
 
 function App() {
   return (
     <div className="container_app">
-      <Login />
+      <Rounting />
     </div>
   );
 }
