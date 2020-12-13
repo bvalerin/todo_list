@@ -38,6 +38,7 @@ const Sidebar = () => {
                 return (
                   <li key={idTask}>
                     <Task title={title} description={description} />
+                    <div className="sidebar_span">React & More</div>
                   </li>
                 );
               })}
