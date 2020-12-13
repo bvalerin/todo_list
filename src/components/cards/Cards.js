@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Cards.css";
 
 const Cards = () => {
     let tasks = ["Solucionar Error", "Crear Componente Sidebar"];
     return (
-        <div>
+        <div className="bodyTask">
             <div className="TaskContainer">
                 <header>
-                    <h2>React & More</h2>
+                    <h4>React & More</h4>
                     <span>
                         plus
                     </span>
@@ -23,6 +23,20 @@ const Cards = () => {
                 </div>
             </div>
             <div className="TaskDescription">
+                    <header>
+                        <b>Detalles</b>
+                        <b>Opciones</b>
+                    </header>
+                    <div className="Description">
+                        <h5>Solucionar error en codigo</h5>
+                        <div>
+                            <label>
+                                Description
+                            </label>
+                            <br/>
+                            <input type="text" />
+                        </div>
+                    </div>
             </div>
         </div>
     )
