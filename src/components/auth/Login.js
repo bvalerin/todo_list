@@ -1,17 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
-import logo from "../../images/Logo.svg";
+import logo from "../../images/logo.svg";
 import google from "../../images/google.svg";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+
+import axios from "axios";
+
 const Login = () => {
+  useEffect(() => {
+    axios({
+      url: "https://react-todo-app.hasura.app/v1/graphql",
+      method: "post",
+      data: {
+        query: `
+             query all_user {
+              user {
+                id
+                name
+                email
+              }
+            }`,
+      },
+    }).then((result) => {
+      console.log(result.data);
+    });
+  });
   return (
     <div className="login">
-      <div className="container">
+      <div className="containerLogin">
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
+
         <form action="">
           <div className="inputLogin">
             <img src={email} alt="Email" />
@@ -21,23 +43,26 @@ const Login = () => {
             <img src={pass} alt="Password" />
             <input type="password" name="password" placeholder="Password" />
           </div>
+          <div className="actionButtons">
+            <button className="iniciarSesion">
+              <Link to={"/home"}>Iniciar Sesion</Link>
+            </button>
+            <button className="iniciarSesionGoogle">
+              <img src={google} alt="Google" />
+              Iniciar Sesion con Google
+            </button>
+          </div>
+          <hr className="divider" />
+          <div className="login-text">
+            <p>
+              ¿Eres nuevo?{" "}
+              <Link to={"/"}>
+                <span>¡Registrate!</span>
+              </Link>
+            </p>
+            <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
+          </div>
         </form>
-        <button className="iniciarSesion">
-          <Link to={"/home"}>
-            Iniciar Sesion
-          </Link>
-        </button>
-        <button className="iniciarSesionGoogle">
-          <img src={google} alt="Google" />
-          Iniciar Sesion con Google
-        </button>
-        <hr className="linea" />
-        <p>
-          ¿Eres nuevo? <Link to={"/"}>¡Registrate!</Link>
-        </p>
-        <Link to={"/"} className="olvidasteTuContraseña">
-          ¿Olvidaste tu constraseña?
-        </Link>
       </div>
     </div>
   );
