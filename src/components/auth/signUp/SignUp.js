@@ -4,7 +4,7 @@ import { useForm } from "../../../hooks/useForm";
 import email from "../../../images/email.svg";
 import pass from "../../../images/pass.svg";
 import user from "../../../images/user.svg";
-import logo from "../../../images/logo.svg";
+import logo from "../../../images/Logo.svg";
 import "./signUp.css";
 
 const SignUp = () => {
