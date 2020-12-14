@@ -4,9 +4,29 @@ import * as Yup from "yup";
 import email from "../../../images/email.svg";
 import pass from "../../../images/pass.svg";
 import user from "../../../images/user.svg";
+import { withSnackbar, useSnackbar } from 'notistack';
 
 const SignUpForm = (props) => {
   // Formulario y validación con formik y Yup
+
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+
+  function handleClick() {
+    if(formik.touched.name && formik.errors.name){
+      enqueueSnackbar(formik.errors.name, {variant:"error"});
+    } else if (formik.touched.email && formik.errors.email) {
+      enqueueSnackbar(formik.errors.email, {variant:"error"});
+    } else if (formik.touched.password && formik.errors.password) {
+      enqueueSnackbar(formik.errors.password, {variant:"error"});
+    } else if (formik.touched.password2 && formik.errors.password2) {
+      enqueueSnackbar(formik.errors.password2, {variant:"error"});
+    }
+  };
+
+
+
+
+
 
   const formik = useFormik({
     initialValues: {
@@ -14,7 +34,6 @@ const SignUpForm = (props) => {
       email: "",
       password: "",
       password2: "",
-      isSubmitting: false,
     },
     validationSchema: Yup.object({
       name: Yup.string().required("El Nombre es Obligatorio"),
@@ -24,9 +43,12 @@ const SignUpForm = (props) => {
       password: Yup.string()
         .required("El password no puede ir vacio")
         .min(2, "El password debe contener al menos 6 caracteres"),
+      password2: Yup.string()
+      .required("El password no puede ir vacio")
+      .min(2, "El password debe contener al menos 6 caracteres"),
     }),
     onSubmit: (values) => {
-        
+      enqueueSnackbar("Formulario enviado", {variant:"success"});
       try {
         console.log(values);
       } catch (error) {
@@ -34,6 +56,8 @@ const SignUpForm = (props) => {
       }
     },
   });
+
+  
 
   return (
     <div>
@@ -54,7 +78,9 @@ const SignUpForm = (props) => {
         <div className="inputLogin">
           <img src={email} alt="Email" />
           
-          {formik.touched.email && formik.errors.email ? <p className="red">{formik.errors.email}</p>: null}
+          {/* {formik.touched.email && formik.errors.email ? <p className="red">{formik.errors.email}</p>: null} */}
+
+          {/* {formik.touched.email && formik.errors.email ? props.enqueueSnackbar("Error de conexión", {variant: "error",}): null} */}
 
           <input
             value={formik.values.email}
@@ -92,7 +118,7 @@ const SignUpForm = (props) => {
           />
         </div>
 
-        <button className="iniciarSesion" type="submit">
+        <button className="iniciarSesion" type="submit" onClick={handleClick}>
           Registrar
         </button>
       </form>
@@ -100,4 +126,4 @@ const SignUpForm = (props) => {
   );
 };
 
-export default SignUpForm;
+export default withSnackbar(SignUpForm);
