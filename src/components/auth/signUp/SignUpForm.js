@@ -36,16 +36,23 @@ const SignUpForm = (props) => {
       password2: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("El Nombre es Obligatorio"),
+      name: Yup.string()
+        .required("El Nombre es Obligatorio")
+        .min(2, "El nombre debe ser mayor a 2 caracteres")
+        .max(30, "El nombre no debe ser mayor a 30 caracteres"),
       email: Yup.string()
         .email("El email no es válido")
+        .min(5, "El email debe ser mayor a 5 caracteres")
+        .max(30, "El email no debe ser mayor a 30 caracteres")
         .required("El Email es Obligatorio"),
       password: Yup.string()
         .required("El password no puede ir vacio")
+        .max(30, "El password no debe ser mayor a 30 caracteres")
         .min(2, "El password debe contener al menos 6 caracteres"),
       password2: Yup.string()
-      .required("El password no puede ir vacio")
-      .min(2, "El password debe contener al menos 6 caracteres"),
+        .required("El password no puede ir vacio")
+        .max(30, "El password no debe ser mayor a 30 caracteres")
+        .min(2, "El password debe contener al menos 6 caracteres"),
     }),
     onSubmit: (values) => {
       enqueueSnackbar("Formulario enviado", {variant:"success"});
