@@ -1,9 +1,9 @@
 import React from "react";
 
-const TaskList = () => {
+const TaskList = ({title}) => {
   return (
     <>
-      <h1>lista de tareas</h1>
+      <h2>{title}</h2>
     </>
   );
 };

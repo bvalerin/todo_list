@@ -1,43 +1,80 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import user from "../../images/user.svg";
+import perfil from "../../images/perfil.jpg"
 
-import Task from "../Task";
+import TaskList from "../TaskList";
+import WorkSpace from "../WorkSpace";
 
 const Sidebar = () => {
-  const [tasks, setTask] = useState([
+  /* const [taskLists, setTaskList] = useState([
     {
-      idTask: "1",
-      title: "TodoList",
-      description: "Proyecto en ejecucion",
+      idTaskList: "1",
+      title: "TodoList"
     },
     {
-      idTask: "2",
-      title: "Proyecto Restaurante",
-      description: "Tarea de la Universidad",
+      idTaskList: "2",
+      title: "Proyecto Restaurante"
     },
     {
-      idTask: "3",
-      title: "Sistema de licencias",
-      description: "Proyecto personal",
+      idTaskList: "3",
+      title: "Sistema de licencias"
+    },
+  ]); */
+  const [workSpaces, setWorkSpace] = useState([
+    {
+      idWorkSpace: 1,
+      title: "Mi lista de tareas"
+    },
+    {
+      idWorkSpace: 2,
+      title: "Proyecto Restaurant"
+    },
+    {
+      idWorkSpace: 3,
+      title: "Escuela"
     },
   ]);
   return (
     <>
       <div className="sidebar">
-        <div className="sidebar_header">
-          <img src={user} alt="user" />
-          <span>Nombre del Usuario</span>
+
+        <div className="sidebar__header">
+          <img src={perfil} alt="Imagen de Usuario" />
+          <div className="sidebar__user-info">
+            <p>Arian Cordoba Suarez</p>
+            <small>arian.gasolero@gmail.com</small>
+          </div>
         </div>
-        <div className="sidebar_body">
-          <button>+ Nuevo espacio de Trabajo</button>
+        <div className="sidebar__newspace">
+          <button>+ NUEVO ESPACIO</button>
+        </div>
+
+
+        <div className="sidebar__body">
           <div className="list_task">
-            <ul>
-              {tasks.map((task, idTask) => {
-                const { title, description } = task;
+            {/* <ul>
+              {taskLists.map((taskList, idTaskList) => {
+                const { title } = taskList;
                 return (
-                  <li key={idTask}>
-                    <Task title={title} description={description} />
+                  <li key={idTaskList}>
+                    <TaskList title={title} />
+                    <div className="sidebar_span">React & More</div>
+                  </li>
+                );
+              })}
+            </ul> */}
+            <ul>
+              {workSpaces.map((workSpace, idWorkSpace) => {
+                const { title } = workSpace;
+                return(
+                  <li key={idWorkSpace}>
+                    <div className="sidebar__workspace">
+                      <WorkSpace title={title} />
+                      <div className="sidebar__workspace-actions">
+                        asdf
+                      </div>
+                    </div>
                     <div className="sidebar_span">React & More</div>
                   </li>
                 );
@@ -45,6 +82,7 @@ const Sidebar = () => {
             </ul>
           </div>
         </div>
+
       </div>
     </>
   );
