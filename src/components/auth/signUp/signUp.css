@@ -1,0 +1,85 @@
+.signUp{
+    display: flex;
+    justify-content: center;
+}
+
+.signUpLabel{
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size:25px;
+  align-items: center;
+  width: 320px;
+}
+  /* .registerContainer p{
+    margin-top: 40px;
+  }
+   */
+
+   .registerContainer .logo{
+     margin-left: 100px;
+     top: -60px;
+   }
+
+  .registerContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 350px;
+    padding: 10px;
+    padding-top: 80px;
+    top: 80px;
+    border-radius: 15px;
+    background: #1b2631;
+}
+  
+  /* .container .logo {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    position: absolute;
+    border-radius: 50%;
+    top: -60px;
+    background-color: #fdfdfd;
+  }
+   */
+
+  .registerContainer .logo img {
+    width: 100%;
+  }
+  
+  .registerContainer .inputLogin {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .registerContainer .inputLogin img {
+    height: 50px;
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+    background: #fdfdfd;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="user"] {
+    font-size: 16px;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+  }
+  
+
+ 
+  

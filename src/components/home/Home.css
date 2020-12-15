@@ -1,0 +1,17 @@
+.mainContainer{
+    display: flex;
+    background-color: #141D25;
+    height: 100vh;
+}
+
+aside {
+    width: 20%;
+}
+
+main {
+    width: 80%;
+}
+
+main > section {
+    height: 95%;
+}

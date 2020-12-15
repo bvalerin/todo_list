@@ -1,9 +1,12 @@
 import React from "react";
+import './Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div>
-      <h1>menu laterar o sidebar </h1>
+      <h2>
+        Hola
+      </h2>
     </div>
   );
 };

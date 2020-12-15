@@ -5,6 +5,27 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  position: absolute;
+  border-radius: 50%;
+  top: -130px;
+  background-color: #fdfdfd;
 }
 
 code {
