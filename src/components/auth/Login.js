@@ -4,6 +4,7 @@ import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
+import Loader from "react-loader-spinner";
 import { useForm } from "../../hooks/useForm";
 import { Link } from "react-router-dom";
 import { withSnackbar } from "notistack";
@@ -70,10 +71,12 @@ const Login = (props) => {
               <img src={pass} alt="Password" />
               <input type="password" name="password" minLength={6} placeholder="Password" required onChange={getInputChange} />
             </div>
+
             <div className="actionButtons">
-              <button className="iniciarSesion">{authenticated ? "Cargando..." : "Iniciar Sesión"}</button>
+              <button className="iniciarSesion">{authenticated ? <Loader type="Grid" color="#1B2631" height={25} width={25} /> : "Iniciar Sesión"}</button>
             </div>
           </form>
+
           <button className="iniciarSesionGoogle" onClick={handleLoginGoogle}>
             <img src={google} alt="Google" />
             Iniciar con Google
