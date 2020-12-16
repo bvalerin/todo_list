@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
@@ -53,7 +53,7 @@ const Login = (props) => {
       variant: "warning",
     });
   };
-
+  
   return (
     <div className="login">
       <div className="containerLogin">
@@ -89,6 +89,7 @@ const Login = (props) => {
             <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
           </div>
         </div>
+
       </div>
     </div>
   );
