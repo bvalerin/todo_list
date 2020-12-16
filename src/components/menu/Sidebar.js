@@ -1,12 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 import user from "../../images/user.svg";
 import perfil from "../../images/perfil.jpg"
 
 import TaskList from "../TaskList";
 import WorkSpace from "../WorkSpace";
+import { ReactComponent as PlusLogo } from "../../images/plus.svg";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+
+  
+  
+  useEffect(() => {
+    const btnToggle = document.querySelector('.toggle-btn');
+    btnToggle.addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('sidebar__active');
+    });
+  });
+
+  /* document.addEventListener('DOMContentLoaded', ()=>{
+    console.log(btnToggle);
+    console.log("Componente");
+  }); */
+
+
+  /* btnToggle.addEventListener('click', function(){
+    console.log(document.getElementById('sidebar'));    
+  }); */
+
+
   /* const [taskLists, setTaskList] = useState([
     {
       idTaskList: "1",
@@ -37,17 +60,20 @@ const Sidebar = () => {
   ]);
   return (
     <>
-      <div className="sidebar">
+      <div className="sidebar" id="sidebar">
+        <div className="toggle-btn">
+          &#9776;
+        </div>
 
         <div className="sidebar__header">
           <img src={perfil} alt="Imagen de Usuario" />
           <div className="sidebar__user-info">
-            <p>Arian Cordoba Suarez</p>
+            <p>Arian Cordoba</p>
             <small>arian.gasolero@gmail.com</small>
           </div>
         </div>
         <div className="sidebar__newspace">
-          <button>+ NUEVO ESPACIO</button>
+          <button><PlusLogo className="sidebar__logo-plus"/> NUEVO ESPACIO</button>
         </div>
 
 
@@ -64,25 +90,23 @@ const Sidebar = () => {
                 );
               })}
             </ul> */}
-            <ul>
+            <ul className="sidebar__workspace">
               {workSpaces.map((workSpace, idWorkSpace) => {
                 const { title } = workSpace;
                 return(
                   <li key={idWorkSpace}>
-                    <div className="sidebar__workspace">
+                    <div>
                       <WorkSpace title={title} />
-                      <div className="sidebar__workspace-actions">
-                        asdf
-                      </div>
                     </div>
-                    <div className="sidebar_span">React & More</div>
                   </li>
                 );
               })}
             </ul>
           </div>
         </div>
-
+        <div className="sidebar__footer">
+          <Link to="/login">Cerrar Sesión</Link><small>v 1.0.0</small>
+        </div>
       </div>
     </>
   );
