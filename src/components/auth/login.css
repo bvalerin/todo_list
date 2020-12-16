@@ -40,8 +40,8 @@
   background: #fdfdfd;
 }
 
-input[type="email"],
-input[type="password"] {
+.login input[type="email"],
+.login input[type="password"] {
   font-size: 16px;
   width: 80%;
   height: 50px;
@@ -54,6 +54,7 @@ input[type="password"] {
 .login .iniciarSesion:hover {
   background-color: rgb(122, 8, 31);
   color: #fff;
+  transition: 0.4s;
 }
 
 .iniciarSesion {
@@ -73,11 +74,13 @@ input[type="password"] {
   border-radius: 50px;
   font-weight: 500;
   font-size: 18px;
+  transition: 0.4s;
 }
 
 .iniciarSesionGoogle:hover {
   background-color: rgba(253, 253, 253, 0.6);
   color: #000;
+  transition: 0.4s;
 }
 
 .login .iniciarSesionGoogle img {
@@ -94,7 +97,7 @@ input[type="password"] {
   color: #fdfdfd;
   text-decoration: none;
 }
-span {
+.login span {
   color: aquamarine;
 }
 
