@@ -8,6 +8,7 @@ ReactDOM.render(
   <SnackbarProvider maxSnack={2}>
     <App />
   </SnackbarProvider>,
+  <App />,
 
   document.getElementById("root")
 );
