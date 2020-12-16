@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 import './Sidebar.css';
 
@@ -98,6 +99,18 @@ const Sidebar = () => {
       </div>
     </>
 >>>>>>> parent of 7979caf... Se terminó el diseño con los estilos CSS del sidebar
+=======
+import React from "react";
+import './Sidebar.css';
+
+const Sidebar = () => {
+  return (
+    <div>
+      <h2>
+        Hola
+      </h2>
+    </div>
+>>>>>>> parent of 2df4fb4... Merge remote-tracking branch 'origin/main' into dev
   );
 };
 
