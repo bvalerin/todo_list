@@ -4,54 +4,80 @@ import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
+import { useForm } from "../../hooks/useForm";
 import { Link } from "react-router-dom";
+import { withSnackbar } from "notistack";
 
 import axios from "axios";
 
-const Login = () => {
-  useEffect(() => {
-    axios({
-      url: "https://react-todo-app.hasura.app/v1/graphql",
-      method: "post",
-      data: {
-        query: `
-             query all_user {
-              user {
-                id
-                name
-                email
-              }
-            }`,
-      },
-    }).then((result) => {
-      console.log(result.data);
-    });
+const Login = (props) => {
+  // React.useEffect(() => {
+  //   axios({
+  //     url: "https://react-todo-app.hasura.app/v1/graphql",
+  //     method: "post",
+  //     data: {
+  //       query: `
+  //            query all_user {
+  //             user {
+  //               id
+  //               name
+  //               email
+  //             }
+  //           }`,
+  //     },
+  //   }).then((result) => {
+  //     console.log(result.data);
+  //   });
+  // });
+  const [formvalues, getInputChange] = useForm({
+    email: "",
+    password: "",
   });
+
+  const [authenticated, setAuthenticated] = React.useState(false);
+
+  const handlerLogin = (e) => {
+    e.preventDefault();
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formvalues.email)) props.enqueueSnackbar("Correo electronico invalido", { variant: "error" });
+    else {
+      setAuthenticated(true);
+      setTimeout(() => {
+        props.enqueueSnackbar("Inicio de sesión exitoso", { variant: "success" });
+        props.history.push(`/home`);
+      }, 1500);
+    }
+  };
+
+  const handleLoginGoogle = () => {
+    props.enqueueSnackbar("Aun no se tiene login con Google", {
+      variant: "warning",
+    });
+  };
+  
   return (
     <div className="login">
       <div className="containerLogin">
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
-
-        <form action="">
-          <div className="inputLogin">
-            <img src={email} alt="Email" />
-            <input type="email" name="email" placeholder="Email" />
-          </div>
-          <div className="inputLogin">
-            <img src={pass} alt="Password" />
-            <input type="password" name="password" placeholder="Password" />
-          </div>
-          <div className="actionButtons">
-            <button className="iniciarSesion">
-              <Link to={"/home"}>Iniciar Sesion</Link>
-            </button>
-            <button className="iniciarSesionGoogle">
-              <img src={google} alt="Google" />
-              Iniciar Sesion con Google
-            </button>
-          </div>
+        <div>
+          <form onSubmit={handlerLogin}>
+            <div className="inputLogin">
+              <img src={email} alt="Email" />
+              <input type="email" name="email" placeholder="Email" onChange={getInputChange} />
+            </div>
+            <div className="inputLogin">
+              <img src={pass} alt="Password" />
+              <input type="password" name="password" minLength={6} placeholder="Password" required onChange={getInputChange} />
+            </div>
+            <div className="actionButtons">
+              <button className="iniciarSesion">{authenticated ? "Cargando..." : "Iniciar Sesión"}</button>
+            </div>
+          </form>
+          <button className="iniciarSesionGoogle" onClick={handleLoginGoogle}>
+            <img src={google} alt="Google" />
+            Iniciar con Google
+          </button>
           <hr className="divider" />
           <div className="login-text">
             <p>
@@ -62,10 +88,11 @@ const Login = () => {
             </p>
             <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
           </div>
-        </form>
+        </div>
+
       </div>
     </div>
   );
 };
 
-export default Login;
+export default withSnackbar(Login);

@@ -1,5 +1,4 @@
-
-.login{
+.login {
   position: absolute;
   display: flex;
   align-content: center;
@@ -18,29 +17,13 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  /* height: 480px; */
   width: 350px;
   padding: 10px;
-  padding-top: 80px;
+  padding-top: 45px;
   top: 80px;
   border-radius: 15px;
   background: #1b2631;
 }
-
-/* .login .logo {
-  width: 130px;
-  height: 130px;
-  padding: 10px;
-  display: flex;
-  margin-left: 80px;
-  align-content: center;
-  position: absolute;
-  border-radius: 50%;
-  top: -130px;
-  background-color: #fdfdfd;
-} */
-
-
 
 .login .inputLogin {
   display: flex;
@@ -68,24 +51,21 @@ input[type="password"] {
   outline: none;
 }
 
-
-
 .login .iniciarSesion:hover {
   background-color: rgb(122, 8, 31);
   color: #fff;
- 
 }
 
-.iniciarSesion{
+.iniciarSesion {
   background-color: crimson;
-  
 }
-.iniciarSesion a{
+.iniciarSesion a {
   text-decoration: none;
   color: #fdfdfd;
 }
 
- .iniciarSesionGoogle, .iniciarSesion {
+.iniciarSesionGoogle,
+.iniciarSesion {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -106,18 +86,19 @@ input[type="password"] {
   margin-bottom: 2px;
 }
 .login-text {
-  margin-top: 10px;
+  margin: 10px 0px 15px;
   color: #fdfdfd;
   text-align: center;
 }
-.login-text a{
+.login-text a {
   color: #fdfdfd;
   text-decoration: none;
 }
-span{
+span {
   color: aquamarine;
 }
 
-.divider{
+.divider {
   border: 1px solid #fdfdfd;
+  margin: 20px 0px 20px;
 }
