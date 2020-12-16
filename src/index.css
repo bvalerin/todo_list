@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .text-center {
@@ -21,6 +22,7 @@ body {
   height: 130px;
   padding: 10px;
   display: flex;
+  /* margin-left: 80px; */
   align-content: center;
   position: absolute;
   border-radius: 50%;

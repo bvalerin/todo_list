@@ -1,3 +1,15 @@
+.signUpError{
+  float: left;
+  display: flex;
+  margin:0;
+  padding:0;
+  overflow: hidden; 
+}
+
+.red{
+  color:red;
+}
+
 .signUp{
     display: flex;
     justify-content: center;
@@ -70,7 +82,7 @@
   
   input[type="email"],
   input[type="password"],
-  input[type="user"] {
+  input[type="text"] {
     font-size: 16px;
     width: 80%;
     height: 50px;
