@@ -4,7 +4,6 @@ import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
 import logo from "../../images/Logo.svg";
 import google from "../../images/google.svg";
-import Loader from "react-loader-spinner";
 import { useForm } from "../../hooks/useForm";
 import { Link } from "react-router-dom";
 import { withSnackbar } from "notistack";
