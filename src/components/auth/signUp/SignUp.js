@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SignUpForm from "./SignUpForm";
 import "./signUp.css";
-import logo from "../../../images/Logo.svg";
+import logo from "../../../images/logo.svg";
 
 const SignUp = () => {
   return (
