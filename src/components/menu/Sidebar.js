@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 import './Sidebar.css';
 
@@ -12,6 +13,8 @@ const Sidebar = () => {
       </h2>
     </div>
 =======
+=======
+>>>>>>> parent of 7979caf... Se terminó el diseño con los estilos CSS del sidebar
 =======
 >>>>>>> parent of 7979caf... Se terminó el diseño con los estilos CSS del sidebar
 import React, { useState } from "react";
