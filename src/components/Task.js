@@ -1,9 +1,10 @@
 import React from "react";
 
-const Task = () => {
+const Task = ({ title, description }) => {
   return (
     <div>
-      <h1>tarea</h1>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
 };
