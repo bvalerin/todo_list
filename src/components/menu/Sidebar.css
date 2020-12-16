@@ -1,0 +1,93 @@
+<<<<<<< HEAD
+=======
+.sidebar {
+  width: 100%;
+  /* margin: 5px; */
+  color: #ffffff;
+}
+
+.sidebar__header {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1B2631;
+}
+
+.sidebar__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__user-info p, .sidebar__user-info small {
+  line-height: .1rem;
+}
+
+.sidebar__user-info p {
+  font-family: 'Poppins';
+  font-size: 1rem;
+}
+
+.sidebar__user-info small {
+  font-style: italic;
+  font-size: .7rem;
+  font-weight: 300;
+  color: #e2e2e2;
+}
+
+.sidebar__newspace {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sidebar__header img {
+  border-radius: 50%;
+  height: 60px;
+}
+
+
+.sidebar_span {
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #29323b;
+  background-color: blue;
+}
+.sidebar__body {
+  /* margin-top: 40px; */
+  height: 88vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar__newspace button {
+  width: 80%;
+  background-color: #29323b;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.sidebar__workspace h3 {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.sidebar__workspace .tasklists {
+  background-color: darkcyan;
+}
+
+.list_task ul {
+  list-style: none;
+  padding: 0;
+}
+>>>>>>> parent of 7979caf... Se terminó el diseño con los estilos CSS del sidebar
