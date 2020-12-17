@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SignUpForm from "./SignUpForm";
-import "./signUp.css";
 import logo from "../../../images/logo.svg";
+import "./signUp.css";
 
 const SignUp = () => {
   return (
@@ -14,7 +14,7 @@ const SignUp = () => {
 
         <div className="signUpLabel text-center">Ingrese su Datos</div>
 
-          <SignUpForm />
+        <SignUpForm />
 
         <hr className="divider" />
         <div className="login-text">
