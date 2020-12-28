@@ -9,11 +9,11 @@ const Home = () => {
             <aside>
                 <Sidebar />
             </aside>
-            <main>
-                <header>
+            <main className="home">
+                <header className="home__header">
                     <Header />
                 </header>
-                <section>
+                <section className="home__cards">
                     <Cards />
                 </section>
             </main>

@@ -1,54 +1,54 @@
-.signUpError{
+.signUpError {
   float: left;
   display: flex;
-  margin:0;
-  padding:0;
-  overflow: hidden; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.red{
-  color:red;
+.red {
+  color: red;
 }
 
-.signUp{
-    display: flex;
-    justify-content: center;
+.signUp {
+  display: flex;
+  justify-content: center;
 }
 
-.signUpLabel{
+.signUpLabel {
   display: inline-block;
   margin: 5px;
   padding: 5px;
   color: #fff;
-  font-size:25px;
+  font-size: 25px;
   align-items: center;
   width: 320px;
 }
-  /* .registerContainer p{
+/* .registerContainer p{
     margin-top: 40px;
   }
    */
 
-   .registerContainer .logo{
-     margin-left: 100px;
-     top: -60px;
-   }
-
-  .registerContainer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    height: auto;
-    width: 350px;
-    padding: 10px;
-    padding-top: 80px;
-    top: 80px;
-    border-radius: 15px;
-    background: #1b2631;
+.registerContainer .logo {
+  margin-left: 100px;
+  top: -60px;
 }
-  
-  /* .container .logo {
+
+.registerContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: auto;
+  width: 350px;
+  padding: 10px;
+  padding-top: 80px;
+  top: 80px;
+  border-radius: 15px;
+  background: #1b2631;
+}
+
+/* .container .logo {
     width: 130px;
     height: 130px;
     padding: 10px;
@@ -61,37 +61,33 @@
   }
    */
 
-  .registerContainer .logo img {
-    width: 100%;
-  }
-  
-  .registerContainer .inputLogin {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .registerContainer .inputLogin img {
-    height: 50px;
-    padding: 12px;
-    border-radius: 10px 0px 0px 10px;
-    background: #fdfdfd;
-  }
-  
-  input[type="email"],
-  input[type="password"],
-  input[type="text"] {
-    font-size: 16px;
-    width: 80%;
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 0px 10px 10px 0px;
-    outline: none;
-  }
-  
+.registerContainer .logo img {
+  width: 100%;
+}
 
- 
-  
+.registerContainer .inputLogin {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.registerContainer .inputLogin img {
+  height: 50px;
+  padding: 12px;
+  border-radius: 10px 0px 0px 10px;
+  background: #fdfdfd;
+}
+
+.signUp input[type="email"],
+.signUp input[type="password"],
+.signUp input[type="text"] {
+  font-size: 16px;
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  outline: none;
+}

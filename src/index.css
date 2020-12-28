@@ -34,3 +34,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  background-color: #141d25;
+  height: 100vh;
+}
