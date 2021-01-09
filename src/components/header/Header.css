@@ -2,12 +2,23 @@
   display: inline-flex;
   justify-content: space-evenly;
   width: 100%;
+  height: 10vh;
+  align-items: center;
 }
 
 .header__search {
+  background-color: #e4e4e4;
   padding: 5px 15px;
-  margin: 15px;
-  width: 20%;
+  width: 300px;
+  max-height: 30px;
   border: none;
-  border-radius: 10px;
+  border-radius: 100px;
+  flex-shrink: 3;
 }
+
+
+.header__toogle-darkmode {
+  width: 50px;
+  flex-shrink: 1;
+}
+

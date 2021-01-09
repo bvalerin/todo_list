@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header">
             <input className="header__search" type="text" placeholder="Search" />
-            <input type="range" />
+            <input type="range" className="header__toogle-darkmode" />
         </div>
     )
 }

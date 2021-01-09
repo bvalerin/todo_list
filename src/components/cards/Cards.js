@@ -1,11 +1,12 @@
+import CardDescription from "./CardDescription";
 import "./Cards.css";
 import CardTaskList from "./CardTaskList";
 
 const Cards = () => {
     let tasks = ["Solucionar Error", "Crear Componente Sidebar"];
     return (
-        <div>
-            <CardTaskList/> 
+        <div className="cards">
+            <CardTaskList/><CardDescription/>
             {/* <div className="taskContainer">
                 <header>
                     <h4>React & More</h4>
