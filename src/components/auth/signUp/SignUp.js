@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import SignUpForm from "./SignUpForm";
+
+import { useForm } from "../../../hooks/useForm";
+import email from "../../../images/email.svg";
+import pass from "../../../images/pass.svg";
+import user from "../../../images/user.svg";
+
 import logo from "../../../images/logo.svg";
 import "./signUp.css";
 
