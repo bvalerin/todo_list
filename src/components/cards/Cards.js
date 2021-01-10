@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import CardDescription from "./CardDescription";
 import "./Cards.css";
+import CardTaskList from "./CardTaskList";
 
 const Cards = () => {
     let tasks = ["Solucionar Error", "Crear Componente Sidebar"];
     return (
-        <div className="bodyTask">
-            <div className="TaskContainer">
+        <div className="cards">
+            <CardTaskList/><CardDescription/>
+            {/* <div className="taskContainer">
                 <header>
                     <h4>React & More</h4>
                     <span>
                         plus
                     </span>
                 </header>
-                <div className="Tasks">
+                <div className="tasks">
                     {tasks.map((v, i) => {
                         return (
                             <div className="task" key={i}>
@@ -22,12 +24,12 @@ const Cards = () => {
                     })}
                 </div>
             </div>
-            <div className="TaskDescription">
+            <div className="taskDescription">
                     <header>
                         <b>Detalles</b>
                         <b>Opciones</b>
                     </header>
-                    <div className="Description">
+                    <div className="description">
                         <h5>Solucionar error en codigo</h5>
                         <div>
                             <label>
@@ -37,7 +39,7 @@ const Cards = () => {
                             <input type="text" />
                         </div>
                     </div>
-            </div>
+            </div> */}
         </div>
     )
 }

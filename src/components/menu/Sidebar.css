@@ -4,6 +4,7 @@
 
 */
 .sidebar {
+  z-index: 3000;
   width: 300px;
   height: 100vh;
   /* margin: 5px; */
@@ -219,6 +220,8 @@
 .sidebar:hover ::-webkit-scrollbar-thumb {
   background: #1B2631;
 }
+
+/* ---------------- END SCROLL ---------------- */
 
 /* ---------------- END SCROLL ---------------- */
 

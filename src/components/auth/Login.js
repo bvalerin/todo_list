@@ -54,7 +54,7 @@ const Login = (props) => {
       variant: "warning",
     });
   };
-  
+
   return (
     <div className="login">
       <div className="containerLogin">
@@ -92,7 +92,6 @@ const Login = (props) => {
             <Link to={"/"}>¿Olvidaste tu constraseña?</Link>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -1,10 +1,13 @@
 import React from "react";
 
-const Task = ({ title, description }) => {
+const Task = () => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <div className="task">
+      <label className="chbx-container">  
+        <input type="checkbox" className="checkmark"/>
+        <span class="checkmark"></span>
+        <h4>Solucionar error en código  </h4>
+      </label>
     </div>
   );
 };

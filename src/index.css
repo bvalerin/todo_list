@@ -22,6 +22,7 @@ body {
   height: 130px;
   padding: 10px;
   display: flex;
+  /* margin-left: 80px; */
   align-content: center;
   position: absolute;
   border-radius: 50%;
@@ -32,4 +33,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  background-color: #141d25;
+  height: 100vh;
 }
