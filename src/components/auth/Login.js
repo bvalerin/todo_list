@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./login.css";
 import email from "../../images/email.svg";
 import pass from "../../images/pass.svg";
-import logo from "../../images/Logo.svg";
+import logo from "../../images/logo.svg";
 import google from "../../images/google.svg";
 import Loader from "react-loader-spinner";
 import { useForm } from "../../hooks/useForm";
