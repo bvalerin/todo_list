@@ -7,7 +7,7 @@ El siguiente es un proyecto colaborativo con el fin de poner en practica conocim
 Como colaborar y aprender en el proceso
 
 1. Ingresar a los canales de comunicacion
-    - Discord: https://discord.gg/hjatSD6G
+    - Discord: https://discord.gg/N9K66sNb
     - Trello: https://trello.com/invite/reactmore/1b393213b34631623e64deed7729e9ba
     - Telegram: 
 
