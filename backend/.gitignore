@@ -1,6 +1,7 @@
 # Folders
 node_modules
 
-# Trash Files
+# Trash and secure files
 .DS_Store
+.env
 package-lock.json
