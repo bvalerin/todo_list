@@ -1,0 +1,6 @@
+# Folders
+node_modules
+
+# Trash Files
+.DS_Store
+package-lock.json
