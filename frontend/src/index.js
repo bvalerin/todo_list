@@ -1,13 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import { SnackbarProvider } from 'notistack';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+import { DoTaskApp } from './DoTaskApp';
+
+import './sass/main.scss';
+
 
 ReactDOM.render(
-  <SnackbarProvider maxSnack={3}>
-    <App />
-  </SnackbarProvider>,
-
-  document.getElementById("root")
+    <DoTaskApp />,
+  document.getElementById('root')
 );
+

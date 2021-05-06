@@ -1,0 +1,61 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 65%; // 1rem = 10px
+    height: 100vh;
+
+    @include d-flex(center, center)
+}
+
+
+*{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #41A6FF;
+}
+
+/* End Scrollbar */
+
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
