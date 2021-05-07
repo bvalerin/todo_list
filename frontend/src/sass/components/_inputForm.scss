@@ -1,0 +1,30 @@
+
+.input__form-box {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input__img-box img {
+    width: 1.2rem;
+
+    position: absolute;
+    top: 24%;
+    left: 2%;
+    z-index: 1;
+}
+
+.input__auth {
+    width: 20rem;
+    outline: none;
+    padding: .7rem 2rem;
+    font-size: .9rem;
+    color: $grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+    border: none;
+    border-radius: .3rem;    
+}

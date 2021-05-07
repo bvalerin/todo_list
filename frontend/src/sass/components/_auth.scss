@@ -1,0 +1,180 @@
+
+.auth__main {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+
+    @include d-flex( center, center );
+}
+
+.auth__login {
+    display: flex;
+
+    height: 32rem;
+    width: 60rem;
+}
+
+.auth__title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1rem;
+
+    text-align: left;
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: $light-grey;
+    }
+}
+
+.login__box-content {
+    background-color: $primary;
+    color: $white;
+    padding: 1rem 2rem;
+
+    text-align: center;
+    flex: 3;
+}
+
+
+.login__title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.socialmedia__navbar {
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0 3rem 0;
+    
+    li {
+        list-style: none;
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+    
+    img {
+        width: 2.2rem;
+    }
+    
+}
+
+
+.login__box-message {
+    flex: 2;
+    background-color: $secondary-dark;
+    color: $white;
+    overflow: hidden;
+
+    position: relative;
+
+    @include d-flex(center, center);
+    flex-direction: column;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
+
+
+
+.login__figures img {
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    //Circle
+    &:nth-child(1) {
+        width: 3rem;
+
+        top: -5%;
+        left: 10%;
+    }
+
+    //Circle
+    &:nth-child(2) {
+        width: 15rem;
+
+        top: -20%;
+        left: 65%;
+    }
+
+    //Triangle
+    &:nth-child(3) {
+        width: 3.5rem;
+
+        top: 22%;
+        left: 15%;
+
+        transform: rotate(30deg);
+    }
+
+    //Triangle
+    &:nth-child(4) {
+        width: 3.5rem;
+    
+        top: 93%;
+        left: 92%;
+    
+        transform: rotate(55deg);
+    }
+
+    //Hexagonal
+    &:nth-child(5) {
+        width: 3.5rem;
+    
+        top: 50%;
+        left: 88%;
+    
+        transform: rotate(90deg);
+    }
+    
+    //Hexagonal
+    &:nth-child(6) {
+        width: 3.5rem;
+        
+        top: 95%;
+        left: 2%;
+    }
+
+    //Square
+    &:nth-child(7) {
+        width: 2.5rem;
+    
+        top: 55%;
+        left: 5%;
+    
+        transform: rotate(45deg);
+    }
+    
+    //Square
+    &:nth-child(8) {
+        width: 1.5rem;
+        
+        top: 85%;
+        left: 60%;
+
+        transform: rotate(45deg);
+    }
+}

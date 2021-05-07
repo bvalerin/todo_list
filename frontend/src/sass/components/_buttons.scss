@@ -1,0 +1,41 @@
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+
+    font-weight: 500;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+    margin-top: 1.5rem;
+
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $secondary;
+
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: darken($secondary, 10);
+        // transform: scale(1.01) translateY(-.2rem);
+    }
+}
+
+.btn-outline {
+
+    border: .1rem solid $white;
+    transition: background-color .2s ease;
+    padding: .8rem 3rem;
+
+    &:hover {
+        background-color: $white;
+        color: $secondary;
+        // transform: scale(1.01) translateY(-.2rem);
+    }
+}

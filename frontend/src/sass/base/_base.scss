@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -7,15 +14,6 @@ body {
     @include d-flex(center, center)
 }
 
-
-*{
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 html, body {
     height: 100vh;
@@ -38,24 +36,3 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End Scrollbar */
-
-
-.mt-1 {
-    margin-top: 5px;
-}
-
-.mt-5 {
-    margin-top: 20px;
-}
-
-.mb-1 {
-    margin-bottom: 5px;
-}
-
-.mb-5 {
-    margin-bottom: 20px;
-}
-
-.text-center {
-    text-align: center;
-}

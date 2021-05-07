@@ -8,3 +8,10 @@
 @import './base/base';
 @import './base/typography';
 @import './base/utilities';
+
+/* Components */
+@import './components/home';
+@import './components/auth';
+@import './components/inputForm';
+@import './components/links';
+@import './components/buttons';
