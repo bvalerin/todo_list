@@ -16,7 +16,7 @@ import messageIcon from '../../images/input-icons/message.svg';
 
 export const LoginScreen = () => {
     return (
-        <div className="auth__login container">
+        <div className="auth__login">
 
             <div className="login__box-content">
 
