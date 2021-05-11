@@ -28,16 +28,12 @@
 }
 
 .btn-secondary {
-    background-color: $tertiary;
-
-    @include respond( phone ) {
-        background-color: turquoise;
-    }
+    background-color: $tertiary-dark;
 
     transition: background-color .2s ease;
 
     &:hover {
-        background-color: darken($tertiary, 10);
+        background-color: darken($tertiary-dark, 5);
         // transform: scale(1.01) translateY(-.2rem);
     }
 }
@@ -48,9 +44,24 @@
     transition: background-color .2s ease;
     padding: .8rem 3rem;
 
+}
+
+.btn-outline-primary {
+
     &:hover {
         background-color: $white;
         color: $secondary;
         // transform: scale(1.01) translateY(-.2rem);
     }
+
+}
+
+.btn-outline-secondary {
+
+    &:hover {
+        background-color: $white;
+        color: $tertiary-dark;
+        // transform: scale(1.01) translateY(-.2rem);
+    }
+
 }

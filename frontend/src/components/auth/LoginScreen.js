@@ -7,10 +7,6 @@ import triangleImage from '../../images/figure-images/triangle.svg';
 import hexagonalImage from '../../images/figure-images/hexagonal.svg';
 import squareImage from '../../images/figure-images/square.svg';
 
-import facebookIcon from '../../images/socialmedia-icons/facebook.svg';
-import twitterIcon from '../../images/socialmedia-icons/twitter.svg';
-import googleIcon from '../../images/socialmedia-icons/google.svg';
-
 import lockIcon from '../../images/input-icons/lock.svg';
 import messageIcon from '../../images/input-icons/message.svg';
 
@@ -26,9 +22,9 @@ export const LoginScreen = () => {
                     <h2>Inicia sesión</h2>
 
                     <nav className="socialmedia__navbar">
-                        <li><img src={ facebookIcon } alt="Facebook Icon" /></li>
-                        <li><img src={ googleIcon } alt="Facebook Icon" /></li>
-                        <li><img src={ twitterIcon } alt="Facebook Icon" /></li>    
+                        <li><i className="fab fa-facebook-square"></i></li>
+                        <li><i className="fab fa-google-plus-square"></i></li>
+                        <li><i className="fab fa-twitter-square"></i></li>   
                     </nav>
                 </div>
 
@@ -83,7 +79,7 @@ export const LoginScreen = () => {
 
                 <Link
                     to="/auth/register"
-                    className="btn btn-outline"
+                    className="btn btn-outline btn-outline-primary"
                 >
                     Registrarse
                 </Link>

@@ -14,6 +14,10 @@
     width: 60rem;
 }
 
+.auth__login-register {
+    flex-direction: row-reverse;
+}
+
 .auth__title {
     text-transform: uppercase;
     font-weight: 800;
@@ -22,6 +26,15 @@
     letter-spacing: .1rem;
 
     text-align: left;
+}
+
+.auth__title-register {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+
+    font-size: 1.5rem !important;
+    z-index: 2;
 }
 
 .auth__form {
@@ -54,6 +67,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.register__title{
+    margin-top: 1rem;
+}
+
 
 .socialmedia__navbar {
     display: flex;
@@ -62,16 +79,26 @@
     
     li {
         list-style: none;
+        cursor: pointer;
+
+        transition: all .3s;
         
         &:not(:last-child) {
             margin-right: 1rem;
         }
     }
     
-    img {
-        width: 2.2rem;
+    .fa-facebook-square:hover {
+        color: #3B5998;
     }
-    
+
+    .fa-google-plus-square:hover {
+        color: #D04736;
+    }
+
+    .fa-twitter-square:hover {
+        color: #00ACEE;
+    }
 }
 
 
@@ -93,6 +120,20 @@
 
     p {
         font-size: .8rem;
+    }
+}
+
+.register__box-message {
+    background-color: $tertiary-dark;
+}
+
+.login__box-message-content {
+    @include d-flex(center, center);
+    flex-direction: column;
+    height: 100%;
+
+    p {
+        width: 95%;
     }
 }
 
