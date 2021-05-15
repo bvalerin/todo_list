@@ -10,8 +10,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 65%; // 1rem = 10px
     height: 100vh;
-
-    @include d-flex(center, center)
 }
 
 

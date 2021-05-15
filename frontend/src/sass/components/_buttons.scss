@@ -38,6 +38,27 @@
     }
 }
 
+.btn-quaternary {
+    background-color: $blue-light2;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .5rem 2rem;
+
+    @include d-flex( center, center );
+
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: lighten($blue-light2, 10);
+        // transform: scale(1.01) translateY(-.2rem);
+    }
+
+    img {
+        padding-right: .5rem;
+        width: 2rem;
+    }
+}
+
 .btn-outline {
 
     border: .1rem solid $white;

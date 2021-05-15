@@ -1,0 +1,32 @@
+
+.sidebar__main {
+    width: 18rem;
+    height: 100vh;
+    background-color: $blue-dark2;
+}
+
+.sidebar__user {
+    background-color: $blue-light2;
+    padding: 1rem;
+
+    @include d-flex( space-evenly, center );
+}
+
+.sidebar__user-img img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.sidebar__user-content {
+    color: $white;
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: .1rem;
+        font-weight: 400;
+    }
+}
+
+.sidebar__add-button-box {
+    @include d-flex( center, center );
+}

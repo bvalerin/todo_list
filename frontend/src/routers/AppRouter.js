@@ -7,9 +7,9 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
+import { DashboardScreen } from '../components/dashboard/DashboardScreen';
 
 import { HomeScreen } from '../components/home/HomeScreen';
-import { TaskScreen } from '../components/tasks/TaskScreen';
 import { AuthRouter } from './AuthRouter';
 
 
@@ -20,9 +20,9 @@ export const AppRouter = () => {
                 <Switch>
                     <Route path="/auth" component={ AuthRouter } />
                     <Route exact path="/home" component={ HomeScreen } />
-                    <Route exact path="/task" component={ TaskScreen } />
+                    <Route exact path="/" component={ DashboardScreen } />
 
-                    <Redirect to="/home" />
+                    <Redirect to="/" />
                 </Switch>
             </div>
         </Router>
