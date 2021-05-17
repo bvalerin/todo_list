@@ -3,15 +3,15 @@
     background-color: transparent;
     border: none;
     color: $white;
-    padding: 1rem 3rem;
-    border-radius: 1.5rem;
+    padding: 1.5rem 5rem;
+    border-radius: 3rem;
 
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 
     cursor: pointer;
 }
@@ -42,7 +42,7 @@
     background-color: $blue-light2;
     text-transform: uppercase;
     font-weight: 500;
-    padding: .5rem 2rem;
+    padding: 1rem 3rem;
 
     @include d-flex( center, center );
 
@@ -54,8 +54,8 @@
     }
 
     img {
-        padding-right: .5rem;
-        width: 2rem;
+        padding-right: 1rem;
+        width: 3rem;
     }
 }
 
@@ -63,7 +63,7 @@
 
     border: .1rem solid $white;
     transition: background-color .2s ease;
-    padding: .8rem 3rem;
+    padding: 1.2rem 4rem;
 
 }
 
@@ -85,4 +85,34 @@
         // transform: scale(1.01) translateY(-.2rem);
     }
 
+}
+
+.btn-simple {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $light-grey;
+    }
+}
+
+.btn-darkmode {
+    background-color: $white;
+    padding: .5rem;
+    margin-top: 0;
+    
+    @include d-flex( center, center );
+
+    img {
+        width: 2.5rem;
+    }
+
+    i {
+        color: $blue-dark;
+        font-size: 2.4rem;
+
+        margin-right: .5rem;
+    }
 }

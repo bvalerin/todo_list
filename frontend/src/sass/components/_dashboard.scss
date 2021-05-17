@@ -1,6 +1,184 @@
 
 .dashboard__main {
     display: flex;
-
     font-family: 'Montserrat', sans-serif;
+
+    background-color: $blue-dark;
+}
+
+.dashboardnavbar__main {
+    @include d-flex( space-evenly, center );
+    margin-top: 2rem;
+}
+
+.dashboardtask__main {
+    @include d-flex( center, center );
+    margin-top: 14rem;
+
+    position: relative;
+}
+
+.dashboard__tasklist-navbar {
+    background-color: $blue-dark2;
+    color: $white;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 25rem;
+
+    position: absolute;
+    top: -12%;
+    left: 22%;
+
+    @include d-flex( space-between, center );
+
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-right: .1rem solid $white;
+        padding-right: 2rem;
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        cursor: pointer;
+
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+
+        &:nth-child(2) {
+            color: $failed;
+        }
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.dashboard__tasklist-box {
+    width: 35rem;
+    background-color: $blue-dark2;
+    height: 45rem;
+
+    border-radius: 1rem;
+
+    &:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+}
+
+.dashboard__tasklist-header {
+    color: $white;
+    background-color: $blue-light;
+    padding: 1rem;
+
+    border-radius: 1rem 1rem 0 0;
+
+    @include d-flex( space-between, center );
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    img {
+        width: 2.2rem;
+        cursor: pointer;
+    }
+
+    button {
+        border-bottom: .1rem solid $white;
+        border-radius: 0;
+        padding: .25rem 0;
+    }
+}
+
+.dashboard__button-fix {
+    @include d-flex( space-around, center );
+}
+
+.dashboard__tasklist-items {
+    margin-top: 3rem;
+    color: $white;
+
+    ul {
+        list-style: none;
+        padding: 0 2rem;
+    }
+
+    li {
+        @include d-flex( auto, center );
+        
+        background-color: $blue-light;
+        padding: 1.5rem;
+        border-radius: 1rem;
+
+        cursor: pointer;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        i {
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+.dashboard__tasklist-details-body {
+    color: $white;
+    padding: 2rem;
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.dashboard__task-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        background-color: $blue-dark;
+        color: $white;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+
+        margin-top: 1rem;
+        padding: 1rem;
+        
+        resize: none;
+        border: none;
+        border-radius: .5rem;
+        height: 10rem;
+    }
+}
+
+.task-done {
+
+    i {
+        color: $success;
+    }
+
+    p {
+        text-decoration: line-through;
+    }
 }

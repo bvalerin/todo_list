@@ -12,16 +12,16 @@ export const TaskItem = () => {
                 <p>Mi lista de tareas</p>
 
                 <div className="taskitem__navbar-group-icons">
-                    <img src={ addIcon } alt="Add Icon" />
                     <img src={ pencilIcon } alt="Add Icon" />
+                    <img src={ addIcon } alt="Add Icon" />
                 </div>
             </div>
 
-            <div className="taskitem__subtask-list">
-                <h4>Personal</h4>
-                <h4>React & More</h4>
-                <h4>Tarea de la Universidad</h4>
-            </div>
+            <ul className="taskitem__subtask-list">
+                <li><p>React & More</p></li>
+                <li><p>Personal</p></li>
+                <li><p>Tarea de la Universidad</p></li>
+            </ul>
 
         </div>
     )

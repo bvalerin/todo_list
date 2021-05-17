@@ -10,8 +10,8 @@
 .auth__login {
     display: flex;
 
-    height: 32rem;
-    width: 60rem;
+    height: 52rem;
+    width: 100rem;
 }
 
 .auth__login-register {
@@ -21,7 +21,7 @@
 .auth__title {
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .1rem;
 
@@ -33,7 +33,7 @@
     top: 2.5%;
     left: 5%;
 
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     z-index: 2;
 }
 
@@ -44,7 +44,7 @@
 
     p {
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: $light-grey;
     }
 }
@@ -52,7 +52,7 @@
 .login__box-content {
     background-color: $primary;
     color: $white;
-    padding: 1rem 2rem;
+    padding: 1.5rem 3rem;
 
     text-align: center;
     flex: 3;
@@ -61,21 +61,21 @@
 
 .login__title {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     
     
     font-family: 'Montserrat', sans-serif;
 }
 
 .register__title{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 
 .socialmedia__navbar {
     display: flex;
     justify-content: center;
-    margin: .5rem 0 3rem 0;
+    margin: 1rem 0 3rem 0;
     
     li {
         list-style: none;
@@ -84,7 +84,7 @@
         transition: all .3s;
         
         &:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
     }
     
@@ -114,12 +114,12 @@
     flex-direction: column;
 
     h3 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
     }
 
     p {
-        font-size: .8rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -140,12 +140,12 @@
 
 
 .login__figures img {
-    width: 10px;
+    width: 1rem;
     position: absolute;
 
     //Circle
     &:nth-child(1) {
-        width: 3rem;
+        width: 5rem;
 
         top: -5%;
         left: 10%;
@@ -153,7 +153,7 @@
 
     //Circle
     &:nth-child(2) {
-        width: 15rem;
+        width: 20rem;
 
         top: -20%;
         left: 65%;
@@ -161,7 +161,7 @@
 
     //Triangle
     &:nth-child(3) {
-        width: 3.5rem;
+        width: 5.5rem;
 
         top: 22%;
         left: 15%;
@@ -171,7 +171,7 @@
 
     //Triangle
     &:nth-child(4) {
-        width: 3.5rem;
+        width: 5.5rem;
     
         top: 93%;
         left: 92%;
@@ -181,7 +181,7 @@
 
     //Hexagonal
     &:nth-child(5) {
-        width: 3.5rem;
+        width: 5.5rem;
     
         top: 50%;
         left: 88%;
@@ -191,7 +191,7 @@
     
     //Hexagonal
     &:nth-child(6) {
-        width: 3.5rem;
+        width: 5.5rem;
         
         top: 95%;
         left: 2%;
@@ -199,7 +199,7 @@
 
     //Square
     &:nth-child(7) {
-        width: 2.5rem;
+        width: 3.5rem;
     
         top: 55%;
         left: 5%;
@@ -209,7 +209,7 @@
     
     //Square
     &:nth-child(8) {
-        width: 1.5rem;
+        width: 3.5rem;
         
         top: 85%;
         left: 60%;

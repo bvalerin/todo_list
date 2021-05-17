@@ -1,0 +1,82 @@
+
+.tasklist {
+    padding: 0;
+    margin-top: 3rem;
+
+    list-style: none;
+    height: 40rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue-light2;
+    }
+}
+
+.taskitem__main {
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        width: 70%;
+        height: .05rem;
+        background-color: $white;
+    }
+}
+
+.taskitem__navbar {
+    color: $white;
+    margin-top: 3rem;
+    
+    @include d-flex( space-between, flex-start );
+
+    p {
+        font-size: 2rem;
+        width: 60%;
+        font-weight: 400;
+
+        padding-left: 2rem; 
+    }
+}
+
+.taskitem__navbar-group-icons {
+    @include d-flex( center, center );
+    padding-right: 2rem;
+
+    img {
+        width: 1.8rem;
+        cursor: pointer;
+
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.taskitem__subtask-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    color: $light-grey;
+
+    li {
+        padding: 1rem 2rem;
+
+        &:hover {
+            background-color: $blue-light;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}

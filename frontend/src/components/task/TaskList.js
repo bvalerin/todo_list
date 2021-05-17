@@ -4,15 +4,17 @@ import { TaskItem } from './TaskItem';
 
 export const TaskList = () => {
 
-    const tasks = [ 1, 2 ];
+    const tasks = [ 1, 2, 3 ];
 
     return (
-        <ul>
+        <ul className="tasklist">
             {
                 tasks.map( task => (
-                    <TaskItem 
+                    <li
                         key={ task }
-                    />
+                    >
+                        <TaskItem />
+                    </li>
                 ) )
             }
         </ul>

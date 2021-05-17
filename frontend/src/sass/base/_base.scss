@@ -6,18 +6,21 @@
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 65%; // 1rem = 10px
-    height: 100vh;
+html {
+    font-size: 62.5%; // 1rem = 10px
 }
-
 
 html, body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
 
 main {
     width: 100%;

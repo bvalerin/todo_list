@@ -32,6 +32,18 @@ export const Sidebar = () => {
 
             <TaskList />
 
+            <div className="siderbar__btnLogout-box">
+                <button
+                    className="btn btn-simple"
+                >
+                    Cerrar Sesión
+                </button>
+
+                <div className="sidebar__version-box">
+                    <p>v1.0.0</p>
+                </div>
+            </div>
+
         </aside>
     )
 }

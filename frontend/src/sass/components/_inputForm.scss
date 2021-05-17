@@ -3,28 +3,54 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
+.input__search-box {
+    margin-bottom: 0;
+}
+
 .input__img-box img {
-    width: 1.2rem;
+    width: 2rem;
 
     position: absolute;
-    top: 24%;
+    top: 30%;
     left: 2%;
     z-index: 1;
 }
 
 .input__auth {
-    width: 20rem;
+    width: 35rem;
     outline: none;
-    padding: .7rem 2rem;
-    font-size: .9rem;
+    padding: 1.4rem 3rem;
+    font-size: 1.5rem;
     color: $grey;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     
     border: none;
     border-radius: .3rem;    
+}
+
+.input__search {
+    width: 30rem;
+    outline: none;
+    padding: .8rem 3rem;
+    font-size: 1.4rem;
+    color: $grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+    border: none;
+    border-radius: 2rem;   
+}
+
+.input__search-img-box img {
+    width: 2rem;
+
+    position: absolute;
+    top: 24%;
+    right: 4%;
+    z-index: 1;
 }

@@ -1,27 +1,30 @@
 
 .sidebar__main {
-    width: 18rem;
+    width: 33rem;
     height: 100vh;
     background-color: $blue-dark2;
+
+    position: relative;
 }
 
 .sidebar__user {
     background-color: $blue-light2;
-    padding: 1rem;
+    padding: 2rem;
 
     @include d-flex( space-evenly, center );
 }
 
 .sidebar__user-img img {
-    width: 4rem;
+    width: 6rem;
     border-radius: 50%;
+    padding-right: 1rem;
 }
 
 .sidebar__user-content {
     color: $white;
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: .1rem;
         font-weight: 400;
     }
@@ -29,4 +32,19 @@
 
 .sidebar__add-button-box {
     @include d-flex( center, center );
+}
+
+.siderbar__btnLogout-box {
+    @include d-flex( space-between, flex-start );
+    padding: 0 1rem 0 2rem;
+    width: 100%;
+
+    position: absolute;
+    top: 95%;
+    left: 0;
+
+    p {
+        color: $white;
+        padding-top: 1.5rem;
+    }
 }

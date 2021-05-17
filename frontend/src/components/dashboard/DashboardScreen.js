@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Dashboard } from './Dashboard'
 import { Sidebar } from './Sidebar'
 
 export const DashboardScreen = () => {
@@ -8,7 +9,7 @@ export const DashboardScreen = () => {
 
             <Sidebar />
 
-            <h1>DashboardScreen</h1>
+            <Dashboard />
         </main>
     )
 }
